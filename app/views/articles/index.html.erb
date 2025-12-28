@@ -1,0 +1,10 @@
+<section class="flex flex-col -5 bg-red-500">
+  <% @Articles.each do |article| %>
+  <section class="pt-8 pb-8 rounded-xl border-blue-500 border-3">
+    <h1 class="text-3xl font-bold underline bg-gray-500">
+      <%= article.title %>
+    </h1>
+    <p class="bg-pink-500"><%= article.description%></p>
+  </section>
+  <% end %>
+</section>
