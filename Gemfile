@@ -65,4 +65,8 @@ group :test do
   gem "selenium-webdriver"
 end
 
+# framework css
 gem "tailwindcss-rails", "~> 4.4"
+
+# autheenticate users
+gem 'devise'

@@ -1,4 +1,7 @@
 class ArticlesController < ApplicationController
+    before_action :authenticate_user!
+    before_action :require_admin, only: [:new, :create, :update, :edit, :destroy]
+
     def index
         @Articles = Article.all
     end
@@ -52,4 +55,5 @@ class ArticlesController < ApplicationController
     def article_params
         params.require(:article).permit(:title, :description)
     end
+
 end

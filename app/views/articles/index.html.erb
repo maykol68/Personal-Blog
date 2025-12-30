@@ -1,5 +1,5 @@
 <section class="flex flex-col -5 bg-red-500">
-  <% @Articles.each do |article| %>
+  <%= current_user.email %> <% @Articles.each do |article| %>
   <section class="pt-8 pb-8 rounded-xl border-blue-500 border-3">
     <h1 class="text-3xl font-bold underline bg-gray-500">
       <%= article.title %>
